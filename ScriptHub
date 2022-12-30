@@ -1,3 +1,7 @@
+if game.PlaceID ~= "11652057145" then
+	error("Invalid Game")
+end
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("SadVicinity's ScriptHub", "Synapse")
 
