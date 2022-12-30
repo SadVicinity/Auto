@@ -95,29 +95,24 @@ CSimSection:NewToggle("Collect Snowflakes", "NIL", function(state)
     game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("67")
     game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("72")
     game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("86")
-        end
+    end
      end
     end
 end)
-CSimSection:NewToggle("Collect Snowflakes", "NIL", function(state)
+CSimSection:NewToggle("Auto Hatch Santa Egg", "NIL", function(state)
     if state then
         getgenv().hatch = true;
 	while wait() do
     if getgenv().hatch == true then
 	game:service'ReplicatedStorage'.Events.Hatch:FireServer("Santa","Triple")
     end
-end
-       
-            end
-        end
+    end
     else
        getgenv().hatch = false;
 	while wait() do
    	 if getgenv().hatch == true then
 	game:service'ReplicatedStorage'.Events.Hatch:FireServer("Santa","Triple")
    	      end
-	    end
-       	  end
         end
-      end
-   end
+    end
+end)
