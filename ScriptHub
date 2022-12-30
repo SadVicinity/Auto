@@ -1,0 +1,101 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("SadVicinity's ScriptHub", "Synapse")
+
+--Main
+local Tab = Window:NewTab("Clicker Masters")
+local ClickerSimSection = Tab:NewSection("Main")
+
+ClickerSimSection:NewToggle("AutoClicker", "Allows You To Click Without Your Mouse", function(state)
+    if state then
+    getgenv().farmer = true;
+    while wait() do
+    if getgenv().farmer == true then
+    game:service'ReplicatedStorage'.Events.Click:FireServer("None!")
+        end
+    end
+else
+            getgenv().farmer = false;
+            while wait() do
+            if getgenv().farmer == true then
+            game:service'ReplicatedStorage'.Events.Click:FireServer("None!")
+            end
+        end
+    end
+    end)
+    
+    ClickerSimSection:NewToggle("Auto Rebirth/10B", "AutoRebith", function(state)
+        if state then
+        getgenv().rebirth = true
+        while wait() do
+        if getgenv().rebirth == true then
+        game:service'ReplicatedStorage'.Events.Rebirth:FireServer("10000000000")
+        else
+            getgenv().rebirth = false
+            while wait() do
+            if getgenv().rebirth == true then
+            game:service'ReplicatedStorage'.Events.Rebirth:FireServer("10000000000")
+            end
+end
+end
+end
+end
+end)
+--Second Tab
+local Tab = Window:NewTab("Christmas Event")
+local CSimSection = Tab:NewSection("Main")
+
+CSimSection:NewToggle("Collect Snowflakes", "NIL", function(state)
+    if state then
+        getgenv().CollectSnow = true
+        while wait() do
+        if getgenv().CollectSnow == true then
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("46")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("12")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("92")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("93")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("60")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("49")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("18")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("28")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("82")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("74")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("80")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("96")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("68")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("50")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("78")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("83")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("87")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("67")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("72")
+        game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("86")
+            end
+        end
+    else
+        getgenv().CollectSnow = true
+        while wait() do
+        if getgenv().CollectSnow == true then
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("46")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("12")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("92")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("93")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("60")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("49")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("18")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("28")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("82")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("74")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("80")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("96")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("68")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("50")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("78")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("83")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("87")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("67")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("72")
+    game:service'ReplicatedStorage'.Events.CollectSnowflake:FireServer("86")
+        end
+     end
+    end
+end)
