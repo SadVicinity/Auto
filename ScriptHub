@@ -1,8 +1,22 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("SadVicinity's ScriptHub", "Synapse")
-Section:NewKeybind("Open And Close", "NIL", RightShift, function()
-	Library:ToggleUI()
-end)
+local toggle = false -- false is Off; true is On
+
+
+function onKeyPress(actionName, userInputState, inputObject)
+    if userInputState == Enum.UserInputState.Begin then
+        print("R was pressed")
+        if toggle == false then
+             toggle = true
+              Library:ToggleUI()
+        else
+            toggle = false
+            Library:ToggleUI()
+        end
+    end
+end
+
+game.ContextActionService:BindAction("keyPress", onKeyPress, false, Enum.KeyCode.R)
 
 --Main
 local Tab = Window:NewTab("Clicker Masters")
