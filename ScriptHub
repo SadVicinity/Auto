@@ -1,9 +1,8 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("SadVicinity's ScriptHub", "Synapse")
 Section:NewKeybind("Open And Close", "NIL", RightShift, function()
 	Library:ToggleUI()
 end)
-local Window = Library.CreateLib("SadVicinity's ScriptHub", "Synapse")
-
 
 --Main
 local Tab = Window:NewTab("Clicker Masters")
