@@ -1,9 +1,8 @@
 if game.PlaceID ~= "11652057145" then
 	error("Invalid Game")
 end
-b:Toggle("Toggle",function(bool)
-    shared.toggle = bool
-    print(shared.toggle)
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
 end)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("SadVicinity's ScriptHub", "Synapse")
