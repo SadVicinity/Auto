@@ -1,11 +1,15 @@
-if game.PlaceID ~= "11652057145" then
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+if game.PlaceID ~= 99999999 then
 	error("Invalid Game")
 end
-Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+Section:NewKeybind("Open And Close", "NIL", RightShift, function()
 	Library:ToggleUI()
 end)
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("SadVicinity's ScriptHub", "Synapse")
+
 
 --Main
 local Tab = Window:NewTab("Clicker Masters")
