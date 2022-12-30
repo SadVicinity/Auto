@@ -115,9 +115,9 @@ end
 	while wait() do
    	 if getgenv().hatch == true then
 	game:service'ReplicatedStorage'.Events.Hatch:FireServer("Santa","Triple")
-   			 end
-		end
-       	 end
-     end
-    end
-end)
+   	      end
+	    end
+       	  end
+        end
+      end
+   end
