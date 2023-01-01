@@ -120,10 +120,6 @@ CSimSection:NewToggle("Auto Hatch Santa Egg", "NIL", function(state)
 	while wait() do
     if getgenv().hatch == true then
 	game:service'ReplicatedStorage'.Events.Hatch:FireServer("Santa","Triple")
-    end
-    end
-    end
-end)
     else
        getgenv().hatch = false;
 	while wait() do
