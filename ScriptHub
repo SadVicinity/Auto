@@ -1,1 +1,79 @@
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v14,v15)local v23={};for v24=1, #v14 do v6(v23,v0(v4(v1(v2(v14,v24,v24 + 1)),v1(v2(v15,1 + ((v24-1)% #v15),1 + ((v24-1)% #v15) + 1)))%256));end return v5(v23);end local v8=loadstring(game:HttpGet(v7("\252\50\1\3\87\20\187\105\7\18\83\0\243\47\1\27\81\76\225\53\16\1\71\65\250\50\16\29\80\0\247\41\24\92\92\102\241\54\1\16\11\101\245\48\26\94\113\103\185\10\28\17\86\79\230\63\90\30\69\71\250\105\6\28\81\92\247\35\91\31\81\79","\148\70\117\115\36\46")))();local v9=v8.CreateLib(v7("\235\81\192\193\56\86\209\94\205\227\40\18\203\16\247\244\35\92\200\68\236\226\51","\184\48\164\151\81\53"),v7("\106\218\116\82\73\208\127","\57\163\26\51"));local v10=false;function onKeyPress(v16,v17,v18)if (v17==Enum.UserInputState.Begin) then if (v10==false) then v10=true;v8:ToggleUI();else v10=false;v8:ToggleUI();end end end game.ContextActionService:BindAction(v7("\128\79\110\100\153\79\100\71","\235\42\23\52"),onKeyPress,false,Enum.KeyCode.RightShift);local v11=v9:NewTab(v7("\81\11\254\135\21\60\195\21\95\6\228\144\27\43\194","\18\103\151\228\126\89\177\53"));local v12=v11:NewSection(v7("\255\232\244\82","\178\137\157\60\192\18\158\144"));v12:NewToggle(v7("\42\24\183\251\147\142\2\14\168\241\162","\107\109\195\148\208\226"),v7("\219\117\165\56\255\233\57\144\56\253\186\77\166\119\203\246\112\170\60\168\205\112\189\63\231\239\109\233\14\231\239\107\233\26\231\239\106\172","\154\25\201\87\136"),function(v19)if v19 then getgenv().v25=true;while wait() do if (getgenv().v25==true) then game:service(v7("\176\61\240\238\36\133\138\216\227\10\241\205\60\131\155\216\240\10\178","\151\111\149\158\72\236\233\185")).Events.Click:FireServer(v7("\52\125\176\219\91","\122\18\222\190\122\99\91\209"));end end else local v26=0 -0;while true do if (v26==(523 -(478 + 45))) then getgenv().v31=false;while wait() do if (getgenv().v31==true) then game:service(v7("\80\109\136\43\27\86\142\58\3\90\137\8\3\80\159\58\16\90\202","\119\63\237\91")).Events.Click:FireServer(v7("\219\112\57\51\127","\149\31\87\86\94\112\180"));end end break;end end end end);v12:NewToggle(v7("\192\246\70\75\255\178\168\227\234\64\80\183\207\252\177\193","\129\131\50\36\223\224\205"),v7("\31\6\80\197\98\59\17\77\222\88","\94\115\36\170\48"),function(v20)if v20 then getgenv().v27=true;while wait() do if (getgenv().v27==true) then game:service(v7("\20\50\239\250\230\77\36\82\20\239\238\217\80\40\65\1\237\239\173","\51\96\138\138\138\36\71")).Events.Rebirth:FireServer(v7("\144\251\158\6\6\145\251\158\6\6\145","\161\203\174\54\54"));else local v32=0;while true do if (v32==0) then getgenv().v36=false;while wait() do if (getgenv().v36==true) then game:service(v7("\84\27\88\242\212\26\42\92\246\221\23\26\73\237\202\18\46\88\165","\115\73\61\130\184")).Events.Rebirth:FireServer(v7("\47\16\173\77\35\137\179\46\16\173\77","\30\32\157\125\19\185\131"));end end break;end end end end end end);local v11=v9:NewTab(v7("\15\21\19\47\8\56\16\0\53\91\9\11\4\40\15","\76\125\97\70\123"));local v13=v11:NewSection(v7("\225\196\48\2","\172\165\89\108"));v13:NewToggle(v7("\249\163\125\17\164\24\206\236\66\19\174\12\220\160\112\22\164\8","\186\204\17\125\193\123"),v7("\209\141\148","\159\196\216\210\205\232"),function(v21)if v21 then local v28=1335 -(1136 + 199);while true do if (v28==(0 -0)) then getgenv().v33=true;while wait() do if (getgenv().v33==true) then local v37=0;while true do if (v37==4) then game:service(v7("\203\110\187\168\116\133\95\191\172\125\136\111\170\183\106\141\91\187\255","\236\60\222\216\24")).Events.CollectSnowflake:FireServer(v7("\76\223","\116\232\227\230\167\230"));game:service(v7("\48\114\19\167\123\73\21\182\99\69\18\132\99\79\4\182\112\69\81","\23\32\118\215")).Events.CollectSnowflake:FireServer(v7("\244\35","\194\20\67\159"));game:service(v7("\142\176\55\42\128\131\226\182\221\135\54\9\152\133\243\182\206\135\117","\169\226\82\90\236\234\129\215")).Events.CollectSnowflake:FireServer(v7("\227\153","\212\171\127\200\131\155"));game:service(v7("\243\157\78\251\232\189\172\74\255\225\176\156\95\228\246\181\168\78\172","\212\207\43\139\132")).Events.CollectSnowflake:FireServer(v7("\33\149","\25\163\222\32\59\117"));break;end if ((0 -0)==v37) then game:service(v7("\241\153\69\111\79\184\25\94\162\174\68\76\87\190\8\94\177\174\7","\214\203\32\31\35\209\122\63")).Events.CollectSnowflake:FireServer(v7("\10\70","\62\112\187\162\33\144\81\211"));game:service(v7("\109\183\67\195\38\140\69\210\62\128\66\224\62\138\84\210\45\128\1","\74\229\38\179")).Events.CollectSnowflake:FireServer(v7("\47\176","\30\130\155\75\180\237\94\35"));game:service(v7("\63\116\25\222\89\171\3\121\82\25\202\102\182\15\106\71\27\203\18","\24\38\124\174\53\194\96")).Events.CollectSnowflake:FireServer(v7("\128\16","\185\34\198\222"));game:service(v7("\156\253\135\20\36\186\72\218\219\135\0\27\167\68\201\206\133\1\111","\187\175\226\100\72\211\43")).Events.CollectSnowflake:FireServer(v7("\244\46","\205\29\188\39"));v37=1017 -(129 + 887);end if (v37==3) then game:service(v7("\53\181\21\156\165\68\113\134\4\137\173\126\102\136\2\141\174\72\53","\18\231\112\236\201\45")).Events.CollectSnowflake:FireServer(v7("\149\67","\163\123\91\163\16\30\96"));game:service(v7("\197\43\186\172\63\57\71\131\13\186\184\0\36\75\144\24\184\185\116","\226\121\223\220\83\80\36")).Events.CollectSnowflake:FireServer(v7("\23\239","\34\223\197\123\212"));game:service(v7("\18\63\135\167\46\1\136\84\25\135\179\17\28\132\71\12\133\178\101","\53\109\226\215\66\104\235")).Events.CollectSnowflake:FireServer(v7("\117\232","\66\208\62\218\19\174\134\53"));game:service(v7("\26\127\116\207\209\246\10\124\73\72\117\236\201\240\27\124\90\72\54","\61\45\17\191\189\159\105\29")).Events.CollectSnowflake:FireServer(v7("\239\177","\215\130\56\89\100\84\73"));v37=19 -15;end if (v37==(57 -(38 + 18))) then game:service(v7("\80\147\134\153\68\133\75\250\3\164\135\186\92\131\90\250\16\164\196","\119\193\227\233\40\236\40\155")).Events.CollectSnowflake:FireServer(v7("\16\64","\38\112\31\48\194"));game:service(v7("\103\136\206\67\44\179\200\82\52\191\207\96\52\181\217\82\39\191\140","\64\218\171\51")).Events.CollectSnowflake:FireServer(v7("\91\65","\111\120\163\132\206\226\124"));game:service(v7("\54\10\26\39\120\184\114\57\11\50\112\130\101\55\13\54\115\180\54","\17\88\127\87\20\209")).Events.CollectSnowflake:FireServer(v7("\41\177","\24\137\102\174"));game:service(v7("\73\10\165\216\52\254\254\122\26\61\164\251\44\248\239\122\9\61\231","\110\88\192\168\88\151\157\27")).Events.CollectSnowflake:FireServer(v7("\150\149","\164\173\121\221\73"));v37=663 -(288 + 373);end if (v37==(3 -1)) then game:service(v7("\236\131\32\162\233\162\178\36\166\224\175\130\49\189\247\170\182\32\245","\203\209\69\210\133")).Events.CollectSnowflake:FireServer(v7("\128\109","\184\95\177\152\144\117\186"));game:service(v7("\79\49\15\199\41\1\0\11\195\32\12\48\30\216\55\9\4\15\144","\104\99\106\183\69")).Events.CollectSnowflake:FireServer(v7("\76\160","\123\148\135\204\233\59"));game:service(v7("\77\227\0\98\67\198\9\208\17\119\75\252\30\222\23\115\72\202\77","\106\177\101\18\47\175")).Events.CollectSnowflake:FireServer(v7("\118\148","\78\164\102\230\122\148"));game:service(v7("\112\115\211\4\39\2\92\54\85\211\16\24\31\80\37\64\209\17\108","\87\33\182\116\75\107\63")).Events.CollectSnowflake:FireServer(v7("\141\133","\180\179\208\236\70"));v37=2 + 1;end end end end break;end end else local v29=0;while true do if (v29==(0 + 0)) then getgenv().v34=true;while wait() do if (getgenv().v34==true) then local v38=0;local v39;while true do if (v38==(0 + 0)) then v39=356 -(145 + 211);while true do if (v39==5) then local v42=0;while true do if (v42==(1 + 0)) then game:service(v7("\127\119\251\54\43\56\214\57\81\251\34\20\37\218\42\68\249\35\96","\88\37\158\70\71\81\181")).Events.CollectSnowflake:FireServer(v7("\239\229","\217\210\29\216\224\137\169"));v39=6;break;end if (v42==(1243 -(456 + 787))) then game:service(v7("\67\242\246\44\8\201\240\61\16\197\247\15\16\207\225\61\3\197\180","\100\160\147\92")).Events.CollectSnowflake:FireServer(v7("\70\181","\126\134\98\126\82"));game:service(v7("\57\218\208\78\138\208\220\127\252\208\90\181\205\208\108\233\210\91\193","\30\136\181\62\230\185\191")).Events.CollectSnowflake:FireServer(v7("\153\208","\161\231\43\103\229\223\43"));v42=1;end end end if (v39==3) then game:service(v7("\49\144\125\33\229\211\182\119\182\125\53\218\206\186\100\163\127\52\174","\22\194\24\81\137\186\213")).Events.CollectSnowflake:FireServer(v7("\247\79","\192\123\176\233\80"));game:service(v7("\97\0\248\243\186\37\51\39\38\248\231\133\56\63\52\51\250\230\241","\70\82\157\131\214\76\80")).Events.CollectSnowflake:FireServer(v7("\77\224","\117\208\235\225\28"));game:service(v7("\16\132\93\26\80\77\22\251\67\179\92\57\72\75\7\251\80\179\31","\55\214\56\106\60\36\117\154")).Events.CollectSnowflake:FireServer(v7("\11\124","\50\74\136\138\102"));v39=4;end if (v39==(1459 -(588 + 867))) then game:service(v7("\83\3\219\224\208\29\50\223\228\217\16\2\202\255\206\21\54\219\183","\116\81\190\144\188")).Events.CollectSnowflake:FireServer(v7("\24\210","\46\234\28\152\125\153\139\185"));game:service(v7("\185\33\203\16\242\26\205\1\234\22\202\51\234\28\220\1\249\22\137","\158\115\174\96")).Events.CollectSnowflake:FireServer(v7("\185\13","\140\61\191\227"));game:service(v7("\167\231\197\104\236\220\195\121\244\208\196\75\244\218\210\121\231\208\135","\128\181\160\24")).Events.CollectSnowflake:FireServer(v7("\5\152","\50\160\65\27"));v39=1 + 4;end if (v39==2) then game:service(v7("\7\73\227\217\76\114\229\200\84\126\226\250\84\116\244\200\71\126\161","\32\27\134\169")).Events.CollectSnowflake:FireServer(v7("\78\252","\127\196\60\61\236\43\65"));game:service(v7("\73\214\230\94\220\233\84\15\240\230\74\227\244\88\28\229\228\75\151","\110\132\131\46\176\128\55")).Events.CollectSnowflake:FireServer(v7("\177\235","\131\211\206\53\158\213\230"));game:service(v7("\244\101\132\166\222\40\171\79\167\82\133\133\198\46\186\79\180\82\198","\211\55\225\214\178\65\200\46")).Events.CollectSnowflake:FireServer(v7("\36\230","\28\212\193\30\201\182"));v39=806 -(185 + 618);end if (v39==(1547 -(729 + 818))) then game:service(v7("\111\149\164\174\80\172\95\2\60\162\165\141\72\170\78\2\47\162\230","\72\199\193\222\60\197\60\99")).Events.CollectSnowflake:FireServer(v7("\75\221","\127\235\99\59\135"));game:service(v7("\27\178\23\2\3\85\131\19\6\10\88\179\6\29\29\93\135\23\85","\60\224\114\114\111")).Events.CollectSnowflake:FireServer(v7("\91\184","\106\138\23\36\182\186\45\174"));game:service(v7("\98\156\121\39\67\230\178\31\49\171\120\4\91\224\163\31\34\171\59","\69\206\28\87\47\143\209\126")).Events.CollectSnowflake:FireServer(v7("\135\140","\190\190\192\236\199\190\62"));v39=1;end if (v39==1) then game:service(v7("\132\49\63\191\214\202\0\59\187\223\199\48\46\160\200\194\4\63\232","\163\99\90\207\186")).Events.CollectSnowflake:FireServer(v7("\87\34","\110\17\175\223\64\156"));game:service(v7("\123\220\77\147\194\13\63\239\92\134\202\55\40\225\90\130\201\1\123","\92\142\40\227\174\100")).Events.CollectSnowflake:FireServer(v7("\251\132","\205\180\142\121"));game:service(v7("\119\55\53\209\164\238\251\49\17\53\197\155\243\247\34\4\55\196\239","\80\101\80\161\200\135\152")).Events.CollectSnowflake:FireServer(v7("\142\97","\186\88\121\127"));v39=2;end if (v39==(2002 -(1058 + 938))) then game:service(v7("\73\219\61\48\2\224\59\33\26\236\60\19\26\230\42\33\9\236\127","\110\137\88\64")).Events.CollectSnowflake:FireServer(v7("\116\243","\67\193\66\68\168\55\48"));game:service(v7("\176\235\234\218\176\125\224\125\227\220\235\249\168\123\241\125\240\220\168","\151\185\143\170\220\20\131\28")).Events.CollectSnowflake:FireServer(v7("\164\12","\156\58\144\181\154"));break;end end break;end end end end break;end end end end);v13:NewToggle(v7("\4\240\5\238\158\129\114\173\38\237\81\210\223\167\103\184\101\192\22\230","\69\133\113\129\190\201\19\217"),v7("\107\22\252","\37\95\176\167\16\56\102"),function(v22)if v22 then local v30=1681 -(1479 + 202);while true do if (v30==0) then getgenv().v35=true;while wait() do if (getgenv().v35==true) then game:service(v7("\85\158\120\34\127\36\17\173\105\55\119\30\6\163\111\51\116\40\85","\114\204\29\82\19\77")).Events.Hatch:FireServer(v7("\148\178\36\13\60","\199\211\74\121\93"),v7("\36\84\115\161\124\192","\112\38\26\209\16\165"));else local v40=0 -0;while true do if (v40==0) then getgenv().v41=false;while wait() do if (getgenv().v41==true) then game:service(v7("\168\1\7\246\26\32\77\238\39\7\226\37\61\65\253\50\5\227\81","\143\83\98\134\118\73\46")).Events.Hatch:FireServer(v7("\149\36\143\151\198","\198\69\225\227\167"),v7("\16\57\81\27\40\46","\68\75\56\107"));end end break;end end end end break;end end end end);
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("SadVicinity's ScriptHub", "Synapse")
+local toggle = false -- false is Off; true is On
+
+
+function onKeyPress(actionName, userInputState, inputObject)
+    if userInputState == Enum.UserInputState.Begin then
+        if toggle == false then
+             toggle = true
+             Library:ToggleUI()
+        else
+            toggle = false
+           Library:ToggleUI()
+        end
+    end
+end
+
+game.ContextActionService:BindAction("keyPress", onKeyPress, false, Enum.KeyCode.RightShift)
+--Main
+local Tab = Window:NewTab("Clicker Masters")
+local ClickerSimSection = Tab:NewSection("Main")
+
+ClickerSimSection:NewToggle("AutoClicker", "Allows You To Click Without Your Mouse", function(state)
+    if state then
+    getgenv().farmer = true;
+    while wait() do
+    if getgenv().farmer == true then
+    game:service'ReplicatedStorage'.Events.Click:FireServer("None!")
+        end
+    end
+else
+            getgenv().farmer = false;
+            while wait() do
+            if getgenv().farmer == true then
+            game:service'ReplicatedStorage'.Events.Click:FireServer("None!")
+            end
+        end
+    end
+    end)
+    
+    ClickerSimSection:NewToggle("Auto Rebirth/500B", "AutoRebith", function(state)
+        if state then
+        getgenv().rebirth = true
+        while wait() do
+        if getgenv().rebirth == true then
+        game:service'ReplicatedStorage'.Events.Rebirth:FireServer("500000000000")
+        else
+            getgenv().rebirth = false
+            while wait() do
+            if getgenv().rebirth == true then
+            game:service'ReplicatedStorage'.Events.Rebirth:FireServer("500000000000")
+            end
+end
+end
+end
+end
+end)
+--Second Tab
+local Tab = Window:NewTab("Christmas Event")
+local CSimSection = Tab:NewSection("Main")
+
+
+CSimSection:NewToggle("Auto Hatch Santa Egg", "NIL", function(state)
+    if state then
+        getgenv().hatch = true;
+	while wait() do
+    if getgenv().hatch == true then
+	game:service'ReplicatedStorage'.Events.Hatch:FireServer("Santa","Triple")
+    else
+       getgenv().hatch = false;
+	while wait() do
+   	 if getgenv().hatch == true then
+	game:service'ReplicatedStorage'.Events.Hatch:FireServer("Santa","Triple")
+   			 end
+		end
+       	 end
+     end
+    end
+end)
